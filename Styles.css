@@ -1,0 +1,325 @@
+body{
+margin: 0%;
+padding: 0%;
+height:100vh;
+overflow-y:hidden; 
+};
+ /* header starts */
+.header_left img{
+    /* object-fit: contain; */
+    margin-top: 1000px;
+    margin-left: 5px;
+display: flex;
+}
+.header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_left span{
+    padding:10px;
+   cursor: pointer; 
+}
+.header_middle{
+    overflow: hidden;
+    display: flex;
+    flex:0.7;
+    align-items: center;
+    background-color: whitesmoke;
+    color: gray;
+    padding:7px;
+    border-radius: 5px;
+    padding-right:15px;
+    padding-left: 15px;
+    max-width: 700px;
+    min-width: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 250px;
+
+}
+.header_middle:hover
+{  
+         background-color:white;
+box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);;
+}
+.header_middle input{
+        border:none;
+    width: 700px;
+    padding: 10px;
+    outline:none;
+font-size: medium;
+background:transparent;
+}
+  
+
+.header_right span{
+          color: gray;
+    padding-right: 20px;
+cursor: pointer;
+
+}
+
+/* header ends */
+
+/* for button starts */
+.compose{
+max-width: 150px;
+flex:0.3;
+justify-content: center;
+text-transform: capitalize;
+color:rgb(5, 5, 5);
+padding:0px;
+border-radius :300px;
+background-color: white;
+display:flex;
+align-items: center;
+cursor: pointer;
+outline:none;
+border:none;
+box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+margin-bottom: 20px;
+margin-top: 20px;
+margin-left: 10px;
+
+
+}
+.compose button{
+    border: none;
+    background:transparent;
+display: flex;
+align-items: center;;
+cursor: pointer;
+padding-right: 22px;
+}
+.compose span{
+    padding-right:8px;
+    font-size: 40px;
+}
+/* button end */
+ /* side bar option starts  */
+ .middle{
+    max-width: 250px;
+    width:250px;}
+    /* margin-right:250px; */
+
+
+ 
+
+
+.side_bar_option,
+.side_bar_option_active{
+ display: flex;
+align-items: center;;
+cursor: pointer;
+border-top-right-radius:30px;
+border-bottom-right-radius:30px;
+background-color:white;
+color: gray;
+max-width: 250px;
+overflow: hidden;
+margin-top: 0px;
+padding:0;
+height: 30px;
+
+}
+
+.side_bar_option span,
+.side_bar_option_active span{
+    padding:0px;
+    margin-left:28px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+font-size: 20px;
+
+}
+.side_bar_option p,
+.side_bar_option_active p{
+    margin-left: 20px;
+}
+
+ /* side bar option end  */
+.meet{
+    padding-left: 20px;
+    max-width: 250px;
+}
+
+
+
+
+/* side bar footer starts */
+
+
+.sidebar_footer{
+    display: flex;
+   align-items: center;;
+   cursor: pointer;
+   border-top-right-radius:30px;
+border-bottom-right-radius:30px;
+   background-color:white;
+   color: gray;
+   max-width: 250px;
+   overflow: hidden;
+   margin-top: 0px;
+   padding:0;
+   height: 30px;
+   
+   }
+   
+   .sidebar_footer span{
+       padding:0px;
+       margin-left:28px;
+       margin-top: 0px;
+       margin-bottom: 0px;
+   font-size: 20px;
+   
+   }
+   .sidebar_footer p{
+       margin-left: 20px;
+   }
+
+/* side bar footer Ends */
+
+/* hover starts */
+
+.side_bar_option_active{
+    background:#fcecec;
+    color:crimson;
+    font-weight:800;
+}
+.side_bar_option:hover,
+.sidebar_footer:hover{
+background:whitesmoke;
+};
+
+
+.side_bar_option:visited,
+.sidebar_footer:visited{
+font-weight:800;
+color: black;
+
+}
+
+.side_bar_option:active,
+.sidebar_footer:active{
+font-weight:800;
+color: black;
+
+}
+
+/* hover Ends */
+.main_body{
+    display: flex;
+    height:100vh;
+}
+.email_list{
+ flex:1;
+ overflow: scroll;
+
+}
+.emaillist_setting{
+    position: sticky;
+    top:0;
+    display:flex;
+    justify-content: space-between;
+    border-bottom:1px solid whitesmoke;
+    background-color: white;
+    z-index: 999;
+    padding:8px;
+    color: gray;
+    cursor: pointer;
+
+}
+.emailsettings_left{
+    margin-left:40px;
+    margin-top: 10px;
+    padding-top:10px ;
+    display: flex;
+    justify-content:center;
+    
+}
+.emailsettings_right{
+    margin-top: 10px;
+margin-right: 10px;
+
+}
+.emailsettings_left input{
+    margin-top: 5px;
+}
+
+/* section starts */
+.section,.section-active
+{
+        display:flex;
+    align-items:center;
+    border-bottom-width: 2px;
+    padding:15px;
+    min-width: 250px;
+    cursor: pointer;
+    color:gray;
+}
+.emaillist_section,.section-active
+{
+    margin-left:10px;
+    position: sticky;
+    top:0;
+    display:flex;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    z-index:999;
+}
+
+.section-active{
+
+    background-color:whitesmoke;
+    border-width:3px ;
+    color:crimson;
+    border-bottom:3px solid crimson
+}
+.section h3,.section-active h3{
+margin-left: 15px;
+font-size :14px;
+}
+.section:hover{
+    background-color: whitesmoke;
+}
+/* section ends */
+/* emailrow starts */ 
+ .emailrow_options{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.emailrow{
+    margin-left:20px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-bottom: 1px solid whitesmoke;
+    cursor: pointer;
+    z-index: 999;
+padding-left: 15px;
+}
+
+.emailrow:hover{
+    border-top: 1px solid whitesmoke;
+    box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.24);
+}
+.emailrow_heading{
+    margin-left: 10px;
+}
+.emailrow_message{
+    margin-left:10px;
+}
+.emailrow_discripiton{
+margin-left: 15px;
+font-weight: 200px;
+}
+.emailrow_time{
+margin-left: 500px;
+}
+
+
+/* email row ends */
